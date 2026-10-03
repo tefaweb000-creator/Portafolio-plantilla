@@ -3,7 +3,7 @@ from pathlib import Path
 
 import streamlit as st
 
-st.set_page_config(page_title="Portafolio · Santiago Millán", page_icon="🗂️", layout="wide")
+st.set_page_config(page_title="Portafolio · Sthefany Diaz", page_icon="🗂️", layout="wide")
 
 # ---------------------------------------------------------------
 # ENLACES (si cambias o te falta alguno, edítalo solo aquí)
@@ -64,14 +64,14 @@ PROYECTOS = [
     },
     {
         "titulo": "Cuaderno digital",
-        "img": "OIG4.jpg",
+        "img": "cuaderno.png",
         "url": URL_CUADERNO,
         "cats": ["RAG", "Análisis de imagen", "Generación de texto"],
         "tabs": ["Imagen", "Texto"],
         "texto": (
-            "Subes el PDF de la clase y fotos de tus apuntes, y la IA lee las dos cosas. Con eso "
-            "arma un resumen que puedes descargar, un quiz para repasar y responde preguntas "
-            "sobre el material."
+            "Subes la lectura en PDF y fotos del tablero o de tu cuaderno. La IA transcribe todo, "
+            "lo une y con eso arma un resumen que puedes descargar, un quiz para repasar y "
+            "responde preguntas sobre el material."
         ),
     },
     {
@@ -165,6 +165,7 @@ section[data-testid="stSidebar"]{display:none;}
 .titulo em{font-style:italic; font-weight:400;}
 .sub{color:#A9C3A6; font-size:18px; max-width:56ch; line-height:1.55; margin-bottom:3rem;}
 .sub a{color:var(--menta);}
+.sub strong{color:var(--menta); font-weight:600; font-size:22px;}
 
 /* ---------- pestañas de Streamlit como carpetas ---------- */
 .stTabs [role="tablist"]{gap:6px; border-bottom:none!important; box-shadow:none!important;
@@ -287,11 +288,12 @@ st.markdown(
         for a in range(0, 360, 60)
     )
     + "</svg>"
-    '<div class="vol">PROYECTOS<br>MULTIMODALES<br>VOL. 1</div>'
+    '<div class="vol">INTERFACES<br>MULTIMODALES<br>VOL. 1</div>'
     "</div>"
     '<div class="titulo">Porta<em>folio</em></div>'
-    '<div class="sub">Santiago Millán. Apps de inteligencia artificial hechas en Streamlit '
-    "que mezclan imagen, voz, texto, datos y sensores. Abre una carpeta para ver los trabajos de esa categoría. "
+    '<div class="sub"><strong>Sthefany Diaz</strong><br>Interfaces Multimodales, profe Carlos Correa.<br><br>'
+    "Apps de inteligencia artificial hechas en Streamlit que mezclan imagen, voz, texto, datos "
+    "y sensores. Abre una carpeta para ver los trabajos de esa categoría. "
     f'<a href="{URL_CURSO}" target="_blank" rel="noopener">Página del curso</a>.</div>',
     unsafe_allow_html=True,
 )
